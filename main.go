@@ -111,12 +111,4 @@ func main() {
 
 	fmt.Printf("val: %v\n", val)
 	fmt.Printf("after: %v\n", notes)
-
-	// ctx.RunScript("const add = (a, b) => a + b", "math.js") // executes a script on the global context
-	// ctx.RunScript("const result = add(3, 4)", "main.js") // any functions previously added to the context can be called
-	// val, err := ctx.RunScript("result", "value.js") // return a value in JavaScript back to Go
-	// if err != nil {
-	// 	panic(err)
-	// }
-	// fmt.Printf("addition result: %s\n", val)
 }
