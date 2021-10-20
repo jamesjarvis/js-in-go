@@ -43,7 +43,7 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
-	err = jarvisObj.Set("add_note", addNoteFn)
+	err = jarvisObj.Set("add_note", addNoteFn, v8go.DontDelete)
 	if err != nil {
 		panic(err)
 	}
@@ -67,7 +67,7 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
-	err = requestObj.Set("get_request_id", getReqIDFn)
+	err = requestObj.Set("get_request_id", getReqIDFn, v8go.ReadOnly)
 	if err != nil {
 		panic(err)
 	}
